@@ -1,5 +1,8 @@
 // Base global configs
 @import 'mixins';
 @import 'variables';
+@import 'base';
 
 // Custom scss rules
+
+@import 'templates/loginPage.scss';

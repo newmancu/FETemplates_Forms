@@ -1,1 +1,55 @@
 // File for global mixins of the project
+
+@mixin fieldMixin($bg:$btnGreen, $fg: $wrapColor2) {
+  background: $bg;
+  color: $fg;
+
+  & * {
+    color: $fg;
+  }
+
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  max-width: 360px;
+  min-width: 310px;
+  height: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@mixin formFieldMixin {
+  @include fieldMixin($wrapColor2, $fieldWhite);
+  border: 2px solid $borderColor;
+  padding: 0 20px;
+
+  &:focus {
+    outline: none;
+    border-color: $linkPurpule;
+  }
+
+  &::placeholder {
+    color: darken($fieldWhite, 10%);
+  }
+}
+
+@mixin btnMixin($bg:$btnGreen, $fg: $wrapColor2) {
+  @include fieldMixin($bg, $fg);
+  cursor: pointer;
+  transition: all ease-out .2s;
+
+  &:hover {
+    background: lighten($bg, 5%);
+    transition: all ease-out .2s;
+  }
+
+  &:focus {
+    background: darken($bg, 10%);
+    transition: all ease-out .2s;
+  }
+}

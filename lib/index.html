@@ -5,9 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>Login Form</title>
 </head>
 <body>
+    <div class="form__wrap">
+        <div class="form__container">
+            <div class="form-links__container">
+                
+                <a href="#" class="form-links__item form-social-links__facebook">
+                    <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.6448 23.982C47.6448 20.916 47.9556 19.2696 52.6806 19.2696H58.989V7.8582H48.8922C36.771 7.8582 32.4996 13.5702 32.4996 23.1714V30.5844H24.9396V42H32.4996V76.1376H47.6238V42H57.7164L59.0604 30.5844H47.6196L47.6448 23.982Z" fill="#4B6FAA"/>
+                    </svg>                            
+                </a>
 
+                <a href="#" class="form-links__item form-social-links__twitter">
+                    <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M76.6836 13.7172C73.773 15.4182 70.5516 16.6488 67.1202 17.3166C64.3776 14.4354 60.459 12.6336 56.1246 12.6336C47.8086 12.6336 41.0634 19.2738 41.0634 27.4596C41.0634 28.6188 41.1936 29.7486 41.4498 30.8406C28.9296 30.219 17.829 24.318 10.3992 15.3468C9.10138 17.5392 8.35798 20.0802 8.35798 22.8018C8.35798 27.9426 11.0166 32.4828 15.0612 35.1414C12.5958 35.0658 10.269 34.398 8.23618 33.285C8.23198 33.348 8.23198 33.4068 8.23198 33.474C8.23198 40.656 13.4274 46.6536 20.3154 48.0144C19.0512 48.3504 17.724 48.531 16.3464 48.531C15.3804 48.531 14.4312 48.4428 13.5156 48.2706C15.4308 54.159 20.9958 58.443 27.5856 58.5648C22.428 62.5422 15.939 64.9152 8.87878 64.9152C7.65658 64.9152 6.46378 64.848 5.28778 64.7094C11.9574 68.9094 19.8744 71.3706 28.3794 71.3706C56.091 71.3706 71.2404 48.7788 71.2404 29.1816C71.2404 28.539 71.2278 27.9006 71.1984 27.2664C74.1384 25.1706 76.692 22.5624 78.7122 19.593C76.0074 20.769 73.1094 21.5628 70.0602 21.924C73.1724 20.0844 75.558 17.1822 76.6836 13.7172Z" fill="#65BBF2"/>
+                    </svg>                         
+                </a>
+                
+            </div>
+
+            <form action="post" class="form-fields__container" autocomplete="off">
+                <input class="form-email form-fields__item" type="email" name="email" id="email-form" placeholder="Email">
+                <input class="form-password form-fields__item" type="password" name="password" id="password-form" placeholder="Password">
+                <div class="form-fields__a">
+                    <a href="#" class="form-forgot">
+                        I forgot my password?
+                    </a>
+                </div>
+                <button class="form-btn form-btn__login" type="submit">Login</button>
+            </form>
+
+            <hr class="form-hr">
+            <div class="form-btn-new__container">
+                <a href="#" class="form-btn form-btn__create">
+                    Create New Account
+                </a>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
